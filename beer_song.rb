@@ -21,4 +21,8 @@ class BeerSong
     bottles_number_begin.downto(bottles_number_end).map(&method(:verse)).join("\n")
   end
 
+  def lyrics
+    verses(99, 0)
+  end
+
 end

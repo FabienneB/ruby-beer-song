@@ -58,7 +58,6 @@ class BeerSongTest < Minitest::Test
   end
 
   def test_the_whole_song # rubocop:disable Metrics/MethodLength
-    skip
     expected = <<-SONG
 99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
@@ -361,16 +360,5 @@ No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
     SONG
     assert_equal expected, BeerSong.new.lyrics
-  end
-
-  # Problems in exercism evolve over time,
-  # as we find better ways to ask questions.
-  # The version number refers to the version of the problem you solved,
-  # not your solution.
-  #
-  # Define a constant named VERSION inside of BookKeeping.
-  def test_bookkeeping
-    skip
-    assert_equal 2, BookKeeping::VERSION
   end
 end
