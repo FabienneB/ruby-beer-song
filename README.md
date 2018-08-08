@@ -311,8 +311,8 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
 Did you get the tests passing and the code clean? If you want to, these
 are some additional things you could try:
 
-* Remove as much duplication as you possibly can.
 * Optimize for readability, even if it means introducing duplication.
+* Remove as much duplication as you possibly can.
 * If you've removed all the duplication, do you have a lot of
   conditionals? Try replacing the conditionals with polymorphism, if it
   applies in this language. How readable is it?
